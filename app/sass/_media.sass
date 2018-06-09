@@ -30,6 +30,7 @@
 // ≤1200px
 +media-breakpoint-up(xl)
 
+/* Wrapper media breakpoints	starts here */
 @media only screen and (min-width:1400px)
 	.wrapper
 		max-width: 1240px
@@ -49,3 +50,43 @@
 @media only screen and (max-width:768px)
 	.wrapper
 		max-width: 540px		
+/* Wrapper media breakpoints ends here */
+
+@media only screen and (max-width:1400px)
+	.header
+		height: 520px		
+
+/* Represent section media starts here */
+@media only screen and (max-width:992px)
+	.represent
+		height: auto
+
+	.represent__inner
+		flex-direction: column	
+		align-items: flex-start
+
+	.represent__specialty
+		border: none
+
+	.r-description
+		padding: 20px
+		border-top: 1px solid #fff
+
+	.represent__content
+		flex-direction: column	
+
+@media only screen and (max-width:768px)
+	.r-description__text
+		display: none
+
+	.represent
+		padding: 40px 10px
+		background-image: url('../img/bg-1-s.jpg')
+
+	.represent__title
+		font-size: 30px
+		line-height: 35px
+		margin-bottom: 20px
+
+	.r-description__title			
+/* Represent section media ends here */
