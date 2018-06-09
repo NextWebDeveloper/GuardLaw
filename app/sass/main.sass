@@ -38,6 +38,73 @@ body
 b, strong
 	font-weight: bold
 
+a 
+	text-decoration: none
+	color: $text
+	&:hover
+		text-decoration: none
+		color: $text	
+
+::placeholder
+	color: #ffffff
+	opacity: 1
+
+.wrapper
+	margin: 0 auto
+
+.header
+	height: 720px
+	background: url('../img/bg-header.jpg')	no-repeat center /cover, linear-gradient(#000, rgba(0,0,0, .8) 25%, rgba(0,0,0, .7) 50%, rgba(0,0,0,.8) 75%, #000)
+.header__inner
+	width: 100%
+	height: 100%
+	background: linear-gradient(#000, rgba(0,0,0, .8) 25%, rgba(0,0,0, .7) 50%, rgba(0,0,0,.8) 75%, #000)	
+	
+
+.header__top
+	padding-top: 40px
+	display: flex
+	align-items: center
+
+.header__logo
+	max-width: 380px
+	img
+		width: 100%
+
+.main-nav
+	margin-left: auto
+	display: flex
+	&__block
+		padding: 0 45px
+		letter-spacing: 2px
+		border-right: 1px solid $accent
+		color: #ffffff
+		&:last-child
+			border: none
+
+.h-search
+	position: relative
+	margin-left: 1rem
+	&__input
+		background-color: transparent 
+		color: #ffffff
+		padding-left: 30px
+		border: none
+		outline: none
+		letter-spacing: 2px
+		width: 170px
+		transition: 1s // Resizing search form window
+		&:focus
+			width: 200px
+			border: 1px solid #fff
+	&__button
+		color: $accent
+		position: absolute
+		left: 5px
+		top: 50%
+		transform: translateY(-50%)  // Vertical-align of search button
+		&:hover
+			color: $accent
 
 
 @import "media" // Always at the end
