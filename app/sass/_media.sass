@@ -60,6 +60,7 @@
 @media only screen and (max-width:992px)
 	.represent
 		height: auto
+		background-position: 25% center
 
 	.represent__inner
 		flex-direction: column	
@@ -67,26 +68,115 @@
 
 	.represent__specialty
 		border: none
+		height: auto
+		flex-basis: auto
+		padding: 0.5rem 1rem
 
 	.r-description
 		padding: 20px
-		border-top: 1px solid #fff
 
 	.represent__content
 		flex-direction: column	
+		width: 100%
+		border-top: 1px solid #fff
+		align-items: flex-start
 
+	.represent__button
+		flex-basis: auto
+		width: 160px
+		align-self: center
 @media only screen and (max-width:768px)
 	.r-description__text
 		display: none
 
 	.represent
 		padding: 40px 10px
+
+	.represent_1	
 		background-image: url('../img/bg-1-s.jpg')
+
+	.represent_2	
+		background-image: url('../img/bg-2-s.jpg')
+
+	.represent_3	
+		background-image: url('../img/bg-3-s.jpg')
+
+	.represent_4	
+		background-image: url('../img/bg-4-s.jpg')
+
+	.represent_5	
+		background-image: url('../img/bg-5-s.jpg')
 
 	.represent__title
 		font-size: 30px
 		line-height: 35px
-		margin-bottom: 20px
-
-	.r-description__title			
+		margin-bottom: 20px		
 /* Represent section media ends here */
+
+/* News section media starts here */	
+@media only screen and (max-width:992px)
+	.news
+		height: auto	
+
+	.news__block
+		flex-direction: column	
+		align-items: flex-start
+
+	.news__button	
+		flex-basis: auto
+		margin-bottom: 1rem
+
+@media only screen and (max-width:768px)
+	.news
+		padding: 40px 26px
+	
+	.news-button__link	
+		font-size: 30px
+/* News section media ends here */		
+
+/* Footer section media starts here */
+@media only screen and (max-width:992px)
+	.footer__inner
+		flex-direction: column
+
+	.footer__connect
+		padding-right: 0
+		border-bottom: 1px solid #fff
+	
+	.f-connect__block
+		border: none
+
+	.f-copyright, .f-advertising
+		display: none	
+
+	.footer__contact
+		padding: 1rem 0
+		border: none
+		border-bottom: 1px solid #fff
+
+	.footer__info
+		padding: 1rem 0	
+
+	.f-hidden
+		display: block	
+
+@media only screen and (max-width:540px)
+	.footer__inner
+		padding-left: 20px
+		padding-right: 20px
+
+	.certifications
+		flex-direction: column
+		align-items: center
+		&__img
+			margin-right: 0
+			height: 55px
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0	
+
+	.fi-blogs__link
+		display: block
+		padding: 0
+		border: none
+/* Footer section media ends here */
