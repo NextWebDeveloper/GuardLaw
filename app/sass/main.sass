@@ -52,39 +52,54 @@ a
 .wrapper
 	margin: 0 auto
 
+.visible
+	display: block!important
+
+/* Header section	starts here */	
 .header
 	height: 720px
 	background: url('../img/bg-header.jpg')	no-repeat center /cover, linear-gradient(#000, rgba(0,0,0, .8) 25%, rgba(0,0,0, .7) 50%, rgba(0,0,0,.8) 75%, #000)
+	position: relative
+
 .header__inner
 	width: 100%
 	height: 100%
 	background: linear-gradient(#000, rgba(0,0,0, .8) 25%, rgba(0,0,0, .7) 50%, rgba(0,0,0,.8) 75%, #000)	
-	
 
 .header__top
-	padding-top: 40px
+	padding-top: 30px
 	display: flex
-	align-items: center
+	align-items: stretch
 
 .header__logo
 	max-width: 380px
+	margin-right: 10px
 	img
 		width: 100%
 
 .main-nav
 	margin-left: auto
 	display: flex
+	height: 60px
 	&__block
 		padding: 0 45px
 		letter-spacing: 2px
 		border-right: 1px solid $accent
 		color: #ffffff
+		display: flex
+		align-items: center
 		&:last-child
 			border: none
+			
+.mouseOver
+	color: #000
+	background-color: #fff	
 
 .h-search
 	position: relative
 	margin-left: 1rem
+	display: flex
+	align-items: center
 	&__input
 		background-color: transparent 
 		color: #ffffff
@@ -106,7 +121,60 @@ a
 		&:hover
 			color: $accent
 
-/* Slider section	starts here */
+/* Attorneys hidden section css starts here */
+.header__hidden
+	position: absolute
+	background-color: #fff
+	top: 90px
+	width: 100%
+	display: none // Hide block
+	&:hover
+		display: block
+
+.att-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 100px	28px
+
+[class^="att-hid__col-"]
+	border-right: 1px solid #505357
+	padding: 0 25px
+	&:last-child
+		border: none
+
+.att-hid__personality	
+	background-color: #fff
+	display: flex
+	align-items: flex-end
+	margin-top: 18px
+
+.att-hid__photo
+	height: 80px
+	border-bottom: 3px solid $accent
+	img
+		height: 100%
+		width: auto
+
+.att-hid__info
+	margin-left: 25px
+	.att-hid__name
+		color: $accent
+		margin-bottom: 0
+		h5 
+			font-size: 20px
+			margin-bottom: 0
+		&:hover, &:active
+			color: #959595
+	.att-hid__post
+		font-size: 14px
+		color: #505357
+		margin-bottom: 0
+		text-transform: uppercase
+/* Attorneys hidden section css ends here */
+/* Header section	css ends here */	
+
+	
+/* Slider section	css starts here */
 .header__middle 
 	display: none
 	max-width: 80%
@@ -125,9 +193,9 @@ a
 		font-size: 30px
 		text-align: center
 		font-style: italic
-/* Slider section	ends here */
+/* Slider section	css ends here */
 
-/* Separator starts here	 */
+/* Separator section css starts here	 */
 .title
 	text-align: center
 	padding: 20px 0
@@ -138,7 +206,7 @@ a
 		font-weight: bold
 		font-size: 36px
 		letter-spacing: 2.2px
-/* Separator ends here	 */
+/* Separator section css ends here	 */
 
 /* Represent section css starts here */
 .represent
@@ -370,9 +438,8 @@ a
 .f-hidden__advertising	
 	padding-top: 1rem
 	border-top: 1px solid #fff
-
-
-
 /* Footer section css ends here */
+
+
 
 @import "media" // Always at the end
