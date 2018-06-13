@@ -94,7 +94,9 @@ a
 			border: none		
 .mouseOver
 	color: #000
-	background-color: #fff	
+	background-color: #fff
+	span 
+		border: none	
 
 .h-search
 	position: relative
@@ -170,12 +172,12 @@ a
 			color: #959595
 	.att-hid__post
 		font-size: 14px
-		color: #505357
+		color: #959595
 		margin-bottom: 0
 		text-transform: uppercase
 /* Attorneys hidden section css ends here */
 
-/* Sevices hidden section css starts here */	
+/* Sevices hidden section css starts here */		
 .serv-hid__inner
 	display: flex	
 	justify-content: center
@@ -199,6 +201,56 @@ a
 	&:last-child
 		border: none		
 /* Sevices hidden section css ends here */	
+
+/* Insights hidden section css starts here */
+.ins-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 0	28px 0
+
+.ins-hid__block
+	padding: 20px 55px
+	border-right: 1px solid #505357
+	&:last-child
+		border: none
+	p 
+		font-size: 20px
+		color: #959595
+		margin-bottom: 0
+	a
+		text-decoration: none
+		color: $accent
+		font-size: 24px
+		&:hover, &:active
+			color: #959595
+/* Insights hidden section css ends here */	
+
+/* About hidden section css starts here */
+.about-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 0	28px 0
+
+[class^="about-hid__col-"]
+	padding: 0 50px
+	border-right: 1px solid #505357
+	&:last-child
+		border: none
+
+.about-hid__link
+	display: block
+	text-decoration: none
+	color: $accent
+	font-size: 24px
+	border-bottom: 1px solid #505357
+	padding: 10px 20px
+	&:last-child
+		border: none
+	&:hover, &:active
+		color: #959595	
+
+
+/* About hidden section css ends here */	
 
 /* Header section	css ends here */	
 
