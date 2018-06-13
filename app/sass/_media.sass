@@ -57,6 +57,35 @@
 	.header
 		height: 520px		
 
+/* Header__top block media starts here */
+@media only screen and (max-width:1200px)
+	.main-nav
+		&__block
+			font-size: 14px
+			span 
+				padding: 0 25px
+
+	.h-search
+		&__input
+			font-size: 14px
+
+@media only screen and (max-width:992px)
+	.main-nav, .h-search
+		display: none
+
+	.header__nav-button
+		display: flex
+
+	.header__inner
+		.wrapper
+			max-width: 100%	
+			padding: 0 20px
+/* Header__top block media ends here */
+
+/* Header hidden navigation media starts here */
+
+/* Header hidden navigation media ends here */	
+
 /* Header hidden section media starts here */
 /* Attorneys hidden section */
 @media only screen and (min-width:1400px)
@@ -84,8 +113,6 @@
 	.ins-hid__block
 		a 
 			font-size: 20px
-		p	
-
 /* Header hidden section media ends here */
 	
 /* Represent section media starts here */
