@@ -74,23 +74,24 @@ a
 .header__logo
 	max-width: 380px
 	margin-right: 10px
+	padding-bottom: 6px
 	img
 		width: 100%
 
 .main-nav
 	margin-left: auto
 	display: flex
-	height: 60px
 	&__block
-		padding: 0 45px
-		letter-spacing: 2px
-		border-right: 1px solid $accent
+		letter-spacing: 2px		
 		color: #ffffff
 		display: flex
 		align-items: center
-		&:last-child
-			border: none
-			
+		height: 70px
+		span 
+			padding: 0 45px
+			border-right: 1px solid $accent
+		&:last-child span
+			border: none		
 .mouseOver
 	color: #000
 	background-color: #fff	
@@ -125,7 +126,7 @@ a
 .header__hidden
 	position: absolute
 	background-color: #fff
-	top: 90px
+	top: 97px
 	width: 100%
 	display: none // Hide block
 	&:hover
@@ -150,10 +151,12 @@ a
 
 .att-hid__photo
 	height: 80px
-	border-bottom: 3px solid $accent
+	width: 90px
+	
 	img
 		height: 100%
 		width: auto
+		border-bottom: 3px solid $accent
 
 .att-hid__info
 	margin-left: 25px
@@ -171,6 +174,32 @@ a
 		margin-bottom: 0
 		text-transform: uppercase
 /* Attorneys hidden section css ends here */
+
+/* Sevices hidden section css starts here */	
+.serv-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 0	28px 0
+	
+[class^="serv-hid__col-"]
+	padding: 0 100px
+	border-right: 1px solid #505357
+	&:last-child
+		border: none
+
+.serv-hid__service
+	display: block
+	padding: 20px 0
+	font-size: 24px	
+	text-decoration: none
+	color: $accent
+	border-bottom: 1px solid #505357
+	&:hover, &:active
+		color: #959595	
+	&:last-child
+		border: none		
+/* Sevices hidden section css ends here */	
+
 /* Header section	css ends here */	
 
 	

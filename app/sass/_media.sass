@@ -52,10 +52,30 @@
 		max-width: 540px		
 /* Wrapper media breakpoints ends here */
 
+
 @media only screen and (max-width:1400px)
 	.header
 		height: 520px		
 
+/* Header hidden section media starts here */
+/* Attorneys hidden section */
+@media only screen and (min-width:1400px)
+	.att-hid__info
+		.att-hid__name
+			h5 
+				font-size: 24px
+		.att-hid__post
+			font-size: 18px
+
+/* Services hidden section */
+@media only screen and (max-width:1200px)
+	[class^="serv-hid__col-"]
+		padding: 0 50px
+
+	.serv-hid__service
+		font-size: 20px
+
+/* Header hidden section media ends here */
 /* Represent section media starts here */
 @media only screen and (max-width:992px)
 	.represent

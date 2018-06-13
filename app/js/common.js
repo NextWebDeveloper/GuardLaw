@@ -16,5 +16,15 @@ $(function() {
 		$('.show-attorneys').toggleClass('mouseOver');
 	});
 
+	// Show attorneys on hover
+	$('.show-services').hover(function(){
+		$('.serv-hid').toggleClass('visible');
+		$(this).toggleClass('mouseOver');
+	});
+	$('.serv-hid').hover(function(){
+		$('.show-services').toggleClass('mouseOver');
+	});
+
+
 
 });
