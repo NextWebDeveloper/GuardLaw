@@ -82,23 +82,44 @@ a
 .main-nav
 	margin-left: auto
 	display: flex
-	&__block
-		letter-spacing: 2px		
-		color: #ffffff
-		display: flex
-		align-items: center
-		height: 70px
-		span 
-			padding: 0 45px
-			border-right: 1px solid $accent
-		&:last-child span
-			border: none		
-.mouseOver
-	color: #000
-	background-color: #fff
+.main-nav__block
+	letter-spacing: 2px		
+	color: #ffffff
+	display: flex
+	align-items: center
+	height: 70px
 	span 
-		border: none	
+		padding: 0 45px
+		border-right: 1px solid $accent
+	&:last-child span
+		border: none		
+	&:hover
+		background-color: #fff
+		color: rgb(27, 32, 38)
+		span 
+			border: none
+	&_active
+		background-color: #fff
+		color: rgb(27, 32, 38)
+		span 
+			border: none
 
+.main-nav__block
+	&:hover + div
+		display: block!important
+
+.h-nav__dropdown
+	margin-right: 10px
+	border-radius: 50%
+	height: 38px
+	width: 38px
+	background-color: transparent 
+	border: 1px solid $accent
+	outline: none
+	color: $accent
+	display: none
+
+	
 .h-search
 	position: relative
 	margin-left: 1rem
@@ -125,21 +146,27 @@ a
 		&:hover
 			color: $accent
 
+/* Show nav on small screens	button */
 .header__nav-button
 	min-width: 30px	
 	display: none
 	align-items: center
-	a 
+	button
 		display: flex
 		align-items: center
 		width: 100%
 		height: 26px
 		position: relative
+		background-color: transparent
+		border: none
+		outline: none
+		cursor: pointer
 		span 
 			position: absolute
 			width: 100%
 			height: 2px
 			background-color: $accent
+			left: 0
 			&:before
 				content: ''
 				width: 100%
@@ -147,6 +174,7 @@ a
 				background-color: $accent
 				position: absolute
 				top: -10px
+				left: 0
 			&:after
 				content: ''
 				width: 100%
@@ -154,6 +182,7 @@ a
 				background-color: $accent
 				position: absolute
 				top: 10px
+				left: 0
 
 /* Attorneys hidden section css starts here */
 .header__hidden
@@ -161,6 +190,8 @@ a
 	background-color: #fff
 	width: 100%
 	display: none // Hide block
+	left: 0
+
 	&:hover
 		display: block
 
@@ -551,10 +582,8 @@ a
 	border-top: 1px solid #fff
 /* Footer section css ends here */
 
-.hidden-nav
-	background-color: grey
-
 .mob-search
+	display: none
 	position: relative
 	height: 40px
 	box-shadow: 0 1px 10px 1px rgba(0,0,0,.4)
@@ -572,5 +601,7 @@ a
 		top: 50%
 		transform: translateY(-50%)
 		font-size: 20px
+		&:hover
+			color: $accent
 
 @import "media" // Always at the end
