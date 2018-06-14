@@ -88,7 +88,7 @@ a
 	display: flex
 	align-items: center
 	height: 70px
-	span 
+	> span 
 		padding: 0 45px
 		border-right: 1px solid $accent
 	&:last-child span
@@ -106,20 +106,40 @@ a
 
 .main-nav__block
 	&:hover + div
-		display: block!important
+		display: block
+
 
 .h-nav__dropdown
+	margin-left: auto
 	margin-right: 10px
 	border-radius: 50%
 	height: 38px
 	width: 38px
-	background-color: transparent 
+	align-items: center
+	justify-content: center
 	border: 1px solid $accent
 	outline: none
-	color: $accent
+	background-color: transparent 
 	display: none
+	position: relative
 
+.span__plus_horizontal
+	position: absolute
+	height: 2px
+	width: 14px
+	background-color: $accent
+
+.span__plus_vertical
+	position: absolute
+	height: 2px
+	width: 14px
+	background-color: $accent
+	transform: rotate(90deg)
+	transition: all 0.3s ease
 	
+.clicked
+	transform: rotate(0deg)
+
 .h-search
 	position: relative
 	margin-left: 1rem
@@ -147,11 +167,11 @@ a
 			color: $accent
 
 /* Show nav on small screens	button */
-.header__nav-button
+.header__nav-buttonBlock
 	min-width: 30px	
 	display: none
 	align-items: center
-	button
+	.header__nav-button
 		display: flex
 		align-items: center
 		width: 100%
