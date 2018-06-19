@@ -69,31 +69,78 @@ a
 .header__top
 	padding-top: 30px
 	display: flex
-	align-items: stretch
+	justify-content: space-between
 
 .header__logo
 	max-width: 380px
+	max-height: 70px
 	margin-right: 10px
 	img
-		width: 100%
+		max-width: 100%
+		max-height: 100%
 
 .main-nav
 	margin-left: auto
 	display: flex
-	height: 60px
-	&__block
+.main-nav__block
+	letter-spacing: 2px		
+	color: #ffffff
+	display: flex
+	align-items: center
+	height: 70px
+	> span 
 		padding: 0 45px
-		letter-spacing: 2px
 		border-right: 1px solid $accent
-		color: #ffffff
-		display: flex
-		align-items: center
-		&:last-child
+	&:last-child span
+		border: none		
+	&:hover
+		background-color: #fff
+		color: rgb(27, 32, 38)
+		span 
 			border: none
-			
-.mouseOver
-	color: #000
-	background-color: #fff	
+	&_active
+		background-color: #fff
+		color: rgb(27, 32, 38)
+		span 
+			border: none
+
+.main-nav__block
+	&:hover + div
+		display: block
+
+
+.h-nav__dropdown
+	margin-left: auto
+	margin-right: 10px
+	border-radius: 50%
+	height: 38px
+	width: 38px
+	align-items: center
+	justify-content: center
+	border: 1px solid $accent
+	outline: none
+	background-color: transparent 
+	display: none
+	position: relative
+	&:focus
+		outline: none 
+		
+.span__plus_horizontal
+	position: absolute
+	height: 2px
+	width: 14px
+	background-color: $accent
+
+.span__plus_vertical
+	position: absolute
+	height: 2px
+	width: 14px
+	background-color: $accent
+	transform: rotate(90deg)
+	transition: all 0.3s ease
+	
+.clicked
+	transform: rotate(0deg)
 
 .h-search
 	position: relative
@@ -121,13 +168,52 @@ a
 		&:hover
 			color: $accent
 
+/* Show nav on small screens	button */
+.header__nav-buttonBlock
+	min-width: 30px	
+	display: none
+	align-items: center
+	.header__nav-button
+		display: flex
+		align-items: center
+		width: 100%
+		height: 26px
+		position: relative
+		background-color: transparent
+		border: none
+		outline: none
+		cursor: pointer
+		span 
+			position: absolute
+			width: 100%
+			height: 2px
+			background-color: $accent
+			left: 0
+			&:before
+				content: ''
+				width: 100%
+				height: 2px
+				background-color: $accent
+				position: absolute
+				top: -10px
+				left: 0
+			&:after
+				content: ''
+				width: 100%
+				height: 2px
+				background-color: $accent
+				position: absolute
+				top: 10px
+				left: 0
+
 /* Attorneys hidden section css starts here */
 .header__hidden
 	position: absolute
 	background-color: #fff
-	top: 90px
 	width: 100%
 	display: none // Hide block
+	left: 0
+
 	&:hover
 		display: block
 
@@ -150,10 +236,12 @@ a
 
 .att-hid__photo
 	height: 80px
-	border-bottom: 3px solid $accent
+	width: 90px
+	
 	img
 		height: 100%
 		width: auto
+		border-bottom: 3px solid $accent
 
 .att-hid__info
 	margin-left: 25px
@@ -167,10 +255,86 @@ a
 			color: #959595
 	.att-hid__post
 		font-size: 14px
-		color: #505357
+		color: #959595
 		margin-bottom: 0
 		text-transform: uppercase
 /* Attorneys hidden section css ends here */
+
+/* Sevices hidden section css starts here */		
+.serv-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 0	28px 0
+	
+[class^="serv-hid__col-"]
+	padding: 0 100px
+	border-right: 1px solid #505357
+	&:last-child
+		border: none
+
+.serv-hid__service
+	display: block
+	padding: 20px 0
+	font-size: 24px	
+	text-decoration: none
+	color: $accent
+	border-bottom: 1px solid #505357
+	&:hover, &:active
+		color: #959595	
+	&:last-child
+		border: none		
+/* Sevices hidden section css ends here */	
+
+/* Insights hidden section css starts here */
+.ins-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 0	28px 0
+
+.ins-hid__block
+	padding: 20px 55px
+	border-right: 1px solid #505357
+	&:last-child
+		border: none
+	p 
+		font-size: 20px
+		color: #959595
+		margin-bottom: 0
+	a
+		text-decoration: none
+		color: $accent
+		font-size: 24px
+		&:hover, &:active
+			color: #959595
+/* Insights hidden section css ends here */	
+
+/* About hidden section css starts here */
+.about-hid__inner
+	display: flex	
+	justify-content: center
+	padding: 10px 0	28px 0
+
+[class^="about-hid__col-"]
+	padding: 0 50px
+	border-right: 1px solid #505357
+	&:last-child
+		border: none
+
+.about-hid__link
+	display: block
+	text-decoration: none
+	color: $accent
+	font-size: 24px
+	border-bottom: 1px solid #505357
+	padding: 10px 20px
+	&:last-child
+		border: none
+	&:hover, &:active
+		color: #959595	
+
+
+/* About hidden section css ends here */	
+
 /* Header section	css ends here */	
 
 	
@@ -440,6 +604,26 @@ a
 	border-top: 1px solid #fff
 /* Footer section css ends here */
 
-
+.mob-search
+	display: none
+	position: relative
+	height: 40px
+	box-shadow: 0 1px 10px 1px rgba(0,0,0,.4)
+	::placeholder
+		color: #959595
+	&__input
+		width: 100%
+		height: 100%
+		padding-left: 10px
+		box-shadow: inset 0 1px 10px 1px rgba(0,0,0,.4)
+	&__button
+		position: absolute
+		color: $accent	
+		right: 5px
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 20px
+		&:hover
+			color: $accent
 
 @import "media" // Always at the end

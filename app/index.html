@@ -32,22 +32,224 @@
 	<header class="header">
 		<div class="header__inner">
 			<div class="wrapper">
-				<div class="header__top">
+				<div class="header__top">					
 					<!-- Logotype -->
 					<div class="header__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
 					<!-- Main navigation -->
-					<nav class="header__nav main-nav">
-						<div class="main-nav__block show-attorneys">ATTORNEYS</div>
-						<div class="main-nav__block">SERVICES</div>
-						<div class="main-nav__block">INSIGHTS</div>
-						<div class="main-nav__block">ABOUT</div>
+					<nav class="header__nav h-nav main-nav mob-nav">
+						<form action="#" class="mob-nav__search mob-search">
+							<input type="text" placeholder="SEARCH" class="mob-search__input">
+							<a href="#" class="mob-search__button"><i class="fas fa-search"></i></a>
+						</form>
+						<div class="h-nav__block">
+							<!-- Attorneys dropdown -->
+							<div class="main-nav__block"><span>ATTORNEYS</span>
+								<button class="h-nav__dropdown">
+									<span class="span__plus_horizontal"></span>
+									<span class="span__plus_vertical"></span>
+								</button>
+							</div>
+							<!-- Attorneys hidden section -->
+							<div class="header__hidden att-hid">
+								<div class="wrapper">
+									<div class="att-hid__inner">
+										<div class="att-hid__col-1">
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav1.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>John Dexter</h5></a>
+													<p class="att-hid__post">FOUNDER</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav2.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Alba Konvi</h5></a>
+													<p class="att-hid__post">MEMBER</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav3.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Anna Klosp</h5></a>
+													<p class="att-hid__post">MEMBER</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav4.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Eduard Douson</h5></a>
+													<p class="att-hid__post">MEMBER</p>		
+												</div>
+											</div>
+										</div>
+										<div class="att-hid__col-2">
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav5.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Anthony Joshua</h5></a>
+													<p class="att-hid__post">MEMBER</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav6.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Margaret Trump</h5></a>
+													<p class="att-hid__post">MEMBER</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav7.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Kevin Santer</h5></a>
+													<p class="att-hid__post">COUNSEL</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav8.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Troya Bellis</h5></a>
+													<p class="att-hid__post">COUNSEL</p>		
+												</div>
+											</div>
+										</div>	
+										<div class="att-hid__col-3">
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav9.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Bill Murrey</h5></a>
+													<p class="att-hid__post">Associate</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav10.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Thomas Dinger</h5></a>
+													<p class="att-hid__post">Associate</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav11.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>Astra Sundez</h5></a>
+													<p class="att-hid__post">Associate</p>		
+												</div>
+											</div>
+											<div class="att-hid__personality">
+												<div class="att-hid__photo"><img src="img/nav12.png" alt="attorney`s photo"></div>
+												<div class="att-hid__info">
+													<a class="att-hid__name" href="#"><h5>John Higgins</h5></a>
+													<p class="att-hid__post">Associate</p>		
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+						</div>
+
+						<div class="h-nav__block">
+							<!-- Services dropdown -->
+							<div class="main-nav__block"><span>SERVICES</span>
+								<button class="h-nav__dropdown">
+									<span class="span__plus_horizontal"></span>
+									<span class="span__plus_vertical"></span>
+								</button>
+							</div>
+							<!-- Services hidden section -->
+							<div class="header__hidden serv-hid">
+								<div class="wrapper">
+									<div class="serv-hid__inner">
+										<div class="serv-hid__col-1">
+											<a href="#" class="serv-hid__service"><strong>Online Gaming & Entertainment</strong></a>
+											<a href="#" class="serv-hid__service"><strong>Data Privacy & Cyber Security</strong></a>
+											<a href="#" class="serv-hid__service"><strong>Payment Processing & Finance</strong></a>
+											<a href="#" class="serv-hid__service"><strong>Internet Advertising & Marketing</strong></a>
+											<a href="#" class="serv-hid__service"><strong>Cryptocurrency & Blockchain</strong></a>
+										</div>
+										<div class="serv-hid__col-2">
+											<a href="#" class="serv-hid__service"><strong>Business Litigation</strong></a>
+											<a href="#" class="serv-hid__service"><strong>Federal Agency Litigation</strong></a>
+											<a href="#" class="serv-hid__service"><strong>White Collar Defense</strong></a>
+											<a href="#" class="serv-hid__service"><strong>Class Action Defense</strong></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="h-nav__block">
+							<!-- Insights dropdown -->
+							<div class="main-nav__block"><span>INSIGHTS</span>
+								<button class="h-nav__dropdown">
+									<span class="span__plus_horizontal"></span>
+									<span class="span__plus_vertical"></span>
+								</button>
+							</div>
+							<!-- Insights hidden section -->
+							<div class="header__hidden ins-hid">
+								<div class="ins-hid__inner">
+									<div class="ins-hid__block">
+										<p>All</p>
+										<a href="#">Insights</a>
+									</div>
+									<div class="ins-hid__block">
+										<p>Blog</p>
+										<a href="#">Crime in the Suites</a>
+									</div>
+									<div class="ins-hid__block">
+										<p>Blog</p>
+										<a href="#">FTC Beat</a>
+									</div>
+									<div class="ins-hid__block">
+										<p>Blog</p>
+										<a href="#">On iGaming</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="h-nav__block">
+							<!-- About dropdown -->
+							<div class="main-nav__block"><span>ABOUT</span>
+								<button class="h-nav__dropdown">
+									<span class="span__plus_horizontal"></span>
+									<span class="span__plus_vertical"></span>
+								</button>
+							</div>
+							<!-- About hidden section -->		
+							<div class="header__hidden about-hid">
+								<div class="wrapper">
+									<div class="about-hid__inner">
+										<div class="about-hid__col-1">
+											<a href="#" class="about-hid__link">About</a>
+											<a href="#" class="about-hid__link">Why we</a>
+										</div>
+										<div class="about-hid__col-2">
+											<a href="#" class="about-hid__link">Pricing</a>
+											<a href="#" class="about-hid__link">News</a>
+										</div>
+										<div class="about-hid__col-3">
+											<a href="#" class="about-hid__link">Careers</a>
+											<a href="#" class="about-hid__link">Contact</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+
 					</nav>
 					<!-- Search form  -->
 					<form action="#" class="header__search h-search">
 						<input type="text" placeholder="SEARCH" class="h-search__input">
 						<a href="#" class="h-search__button"><i class="fas fa-search"></i></a>
 					</form>
+					<div class="header__nav-buttonBlock">
+						<button class="header__nav-button"><span></span></button>
+					</div>
 				</div>
+			</div>
+				
 				<div class="header__middle">
 					<div class="header__slider">
 						<p>extreme knowledge of the law <span>-V.V.Charslton</span></p>
@@ -55,104 +257,9 @@
 						<p>performed outstandingly <span>-V.V.Charslton</span></p>
 					</div>
 				</div>
-			</div>
 		</div>
-		<div class="header__hidden att-hid">
-			<div class="wrapper">
-				<div class="att-hid__inner">
-					<div class="att-hid__col-1">
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav1.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>John Dexter</h5></a>
-								<p class="att-hid__post">FOUNDER</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav2.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Alba Konvi</h5></a>
-								<p class="att-hid__post">MEMBER</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav3.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Anna Klosp</h5></a>
-								<p class="att-hid__post">MEMBER</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav4.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Eduard Douson</h5></a>
-								<p class="att-hid__post">MEMBER</p>		
-							</div>
-						</div>
-					</div>
-					<div class="att-hid__col-2">
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav5.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Anthony Joshua</h5></a>
-								<p class="att-hid__post">MEMBER</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav6.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Margaret Trump</h5></a>
-								<p class="att-hid__post">MEMBER</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav7.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Kevin Santer</h5></a>
-								<p class="att-hid__post">COUNSEL</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav8.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Troya Bellis</h5></a>
-								<p class="att-hid__post">COUNSEL</p>		
-							</div>
-						</div>
-					</div>	
-					<div class="att-hid__col-3">
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav9.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Bill Murrey</h5></a>
-								<p class="att-hid__post">Associate</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav10.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Thomas Dinger</h5></a>
-								<p class="att-hid__post">Associate</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav11.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>Astra Sundez</h5></a>
-								<p class="att-hid__post">Associate</p>		
-							</div>
-						</div>
-						<div class="att-hid__personality">
-							<div class="att-hid__photo"><img src="img/nav12.png" alt="attorney`s photo"></div>
-							<div class="att-hid__info">
-								<a class="att-hid__name" href="#"><h5>John Higgins</h5></a>
-								<p class="att-hid__post">Associate</p>		
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
+		
+		
 	</header>
 	<div class="title">
 		<h2 class="title__separator">LITIGATION + INVESTIGATIONS</h2>
